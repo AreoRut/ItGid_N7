@@ -64,3 +64,43 @@ function (a) {
     return a * 2;
 }
 (a) => 'Helloween'*a;*/
+
+//#1
+let out = document.querySelector('#out');
+
+//let z = 5;
+//let y = 8;
+document.querySelector('.f3').onclick = (z, y) => {
+    let c = 4 * 5;
+
+    out.innerHTML = c;
+}
+//out.innerHTML = (3, 6);
+
+document.querySelector('.f3').onclick = (a, b) => {
+
+    out.innerHTML = (3 * 3);
+}
+
+//#1
+let out1 = document.querySelector('#out1');
+
+let a1 = 8;
+function t1() {
+    //console.log(a1);
+    out1.innerHTML = a1;
+}
+document.querySelector('.b1').onclick = t1;
+//#2
+
+let a2 = 8;
+function t2() {
+
+    //console.log(a2);
+    out2.innerHTML = a2;
+}
+document.querySelector(".b2").onclick = function () {
+    document.querySelector("#out2").textContent = t2();
+
+}
+
