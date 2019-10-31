@@ -104,3 +104,47 @@ document.querySelector(".b2").onclick = function () {
 
 }
 
+//#2 дубль
+let a3 = 12;
+function t2() {
+
+    console.log(a3);
+    return 12;
+    //innerHTML = a2;
+    //t2.innerHTML = a2;
+
+    //t2.innerHTML;
+}
+document.querySelector(".b2").onclick = function () {
+    document.querySelector("#out2").textContent = t2();
+    //document.querySelector("#out2").textContent = "First";
+}
+//let text = document.getElementById('divA').textContent;
+document.getElementById('divA').textContent = 'This text is different!';
+
+//#3
+
+function t3(a, b) {
+    return a * b;
+
+}
+document.querySelector('.b3').onclick = function () {
+    document.querySelector('#out3').textContent = t3(3, 4);
+}
+document.querySelector('.b3').onclick = function () {
+    document.querySelector('#out3').textContent = t3(6, 6);
+}
+
+//#4
+let age = document.querySelector('.age');
+let year = 2019;
+function t4() {
+    console.log(age.value);
+    console.log(year);
+
+    return year - age.value;
+
+}
+document.querySelector('.b4').onclick = function () {
+    document.querySelector('#out4').textContent = t4();
+}
